@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Медицинский центр DIAMED — консультации, диагностика и лечение. Запись онлайн, удобное время, забота о пациенте."
+      content="Медицинский центр DIAMED — консультации, диагностика и лечение"
     />
     <meta name="theme-color" content="#0b6bff" />
     <title>DIAMED — медицинский центр</title>
@@ -27,39 +27,20 @@
           <a class="nav__link" href="#contacts" data-scroll>Контакты</a>
         </nav>
 
-        <div class="headerAddress" aria-label="Адрес клиники">
-          <span class="headerAddress__icon" aria-hidden="true"></span>
-          <span data-bind="addressText">пгт Кромы, ул. 25 Октября, д. 52, литер А</span>
-        </div>
+        <div class="headerContactRow" aria-label="Адрес и телефон">
+          <div class="headerAddress" aria-label="Адрес клиники">
+            <span data-bind="addressText">пгт Кромы, ул. 25 Октября, д. 52 А</span>
+          </div>
 
-        <div class="header__actions">
           <a class="phoneLink" data-bind="phoneLink" href="tel:+70000000000">
-            <span class="phoneLink__label">Запись:</span>
             <span data-bind="phoneText">+7 (960) 648-36-22</span>
           </a>
 
           <a class="btn btn--primary" data-bind="phoneLink" href="tel:+79606483622">Позвонить</a>
-
-          <button
-            class="burger"
-            type="button"
-            aria-label="Открыть меню"
-            aria-expanded="false"
-            data-menu-toggle
-          >
-            <span class="burger__line" aria-hidden="true"></span>
-            <span class="burger__line" aria-hidden="true"></span>
-            <span class="burger__line" aria-hidden="true"></span>
-          </button>
         </div>
-      </div>
 
-      <div class="mobileMenu" data-mobile-menu hidden>
-        <div class="container mobileMenu__inner">
-          <a class="mobileMenu__link" href="#services" data-scroll>Услуги</a>
-          <a class="mobileMenu__link" href="#doctors" data-scroll>Специалисты</a>
-          <a class="mobileMenu__link" href="#contacts" data-scroll>Контакты и режим работы</a>
-          <a class="btn btn--primary mobileMenu__cta" href="#contacts" data-scroll>Связаться</a>
+        <div class="header__actions">
+          <a class="btn btn--primary headerCallMobile" data-bind="phoneLink" href="tel:+79606483622">Позвонить</a>
         </div>
       </div>
     </header>
@@ -241,7 +222,7 @@
               </div>
               <div class="contactCard__row">
                 <p class="contactCard__label">Адрес</p>
-                <p class="contactCard__value" data-bind="addressText2">пгт Кромы, ул. 25 Октября, д. 52, литер А</p>
+                <p class="contactCard__value" data-bind="addressText2">Кромы, ул. 25 Октября, д. 52 А</p>
               </div>
               <div class="contactCard__row">
                 <p class="contactCard__label">Часы работы</p>

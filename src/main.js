@@ -5,7 +5,7 @@ const CENTER = {
   phoneTel: '+79606483622',
   emailText: 'diamed57@mail.ru',
   emailMailto: 'mailto:diamed57@mail.ru',
-  addressText: 'пгт Кромы, ул. 25 Октября, д. 52, литер А',
+  addressText: 'Кромы, ул. 25 Октября, д. 52 А',
   mapUrl: 'https://yandex.com/maps/-/CPft64n1',
 }
 
@@ -58,30 +58,5 @@ function setupSmoothScroll() {
   })
 }
 
-function setupMobileMenu() {
-  const toggleBtn = qs('[data-menu-toggle]')
-  const menu = qs('[data-mobile-menu]')
-  if (!toggleBtn || !menu) return
-
-  const setOpen = (open) => {
-    menu.hidden = !open
-    toggleBtn.setAttribute('aria-expanded', String(open))
-    document.body.classList.toggle('isMenuOpen', open)
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    setOpen(menu.hidden)
-  })
-
-  qsa('a[href^="#"]', menu).forEach((el) => {
-    el.addEventListener('click', () => setOpen(false))
-  })
-
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') setOpen(false)
-  })
-}
-
 setupBinds()
 setupSmoothScroll()
-setupMobileMenu()

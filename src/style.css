@@ -54,7 +54,6 @@ body {
   margin: 0;
 }
 
-body.isMenuOpen,
 body.isModalOpen {
   overflow: hidden;
 }
@@ -104,6 +103,7 @@ a {
 
 .header__inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   padding: 14px 0;
@@ -150,8 +150,8 @@ a {
 .nav {
   display: flex;
   gap: 14px;
-  margin-left: 10px;
   flex: 1 1 auto;
+  min-width: 280px;
 }
 
 .nav__link {
@@ -168,7 +168,7 @@ a {
 }
 
 .headerAddress {
-  display: none;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 10px 12px;
@@ -177,39 +177,12 @@ a {
   background: var(--surface);
   color: var(--muted);
   font-size: 13px;
-  max-width: 420px;
+  line-height: 1.2;
+  min-width: 0;
+  max-width: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.headerAddress__icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 10px;
-  flex: 0 0 auto;
-  background: linear-gradient(180deg, rgba(19, 198, 255, 0.22), rgba(11, 107, 255, 0.18));
-  border: 1px solid rgba(19, 198, 255, 0.18);
-  position: relative;
-}
-
-.headerAddress__icon::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px 999px 999px 0;
-  transform: rotate(-45deg);
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 8px 20px rgba(11, 107, 255, 0.22);
-}
-
-@media (min-width: 1080px) {
-  .headerAddress {
-    display: inline-flex;
-  }
 }
 
 .header__actions {
@@ -217,6 +190,88 @@ a {
   align-items: center;
   gap: 10px;
   flex: 0 0 auto;
+}
+
+@media (max-width: 599px) {
+  .logo {
+    order: 1;
+  }
+
+  .header__actions {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .nav {
+    order: 3;
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
+.headerContactRow {
+  flex: 1 1 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.headerContactRow .headerAddress {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.headerContactRow .phoneLink {
+  display: inline-flex;
+  white-space: nowrap;
+  gap: 8px;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerContactRow .btn {
+  white-space: nowrap;
+}
+
+@media (min-width: 650px) {
+  .headerContactRow {
+    display: flex;
+  }
+
+  .header__actions {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .nav {
+    min-width: 0;
+  }
+
+  .headerContactRow {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
 }
 
 .phoneLink {
@@ -234,11 +289,6 @@ a {
     gap: 8px;
     align-items: baseline;
   }
-}
-
-.phoneLink__label {
-  color: var(--muted2);
-  font-size: 12px;
 }
 
 .btn {
@@ -278,6 +328,14 @@ a {
   color: #fff;
 }
 
+@media (max-width: 599px) {
+  .btn--primary {
+    padding: 7px 10px;
+    border-radius: 11px;
+    font-size: 13px;
+  }
+}
+
 .btn--ghost {
   background: transparent;
 }
@@ -295,80 +353,6 @@ a {
   opacity: 0.7;
   cursor: not-allowed;
   transform: none;
-}
-
-.burger {
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  cursor: pointer;
-  display: inline-grid;
-  place-content: center;
-  gap: 4px;
-}
-
-.burger:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-
-.burger__line {
-  width: 18px;
-  height: 2px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.9);
-}
-
-@media (prefers-color-scheme: light) {
-  .burger__line {
-    background: rgba(11, 18, 32, 0.86);
-  }
-}
-
-@media (min-width: 920px) {
-  .burger {
-    display: none;
-  }
-}
-
-.mobileMenu {
-  border-top: 1px solid var(--border);
-  background: rgba(11, 18, 32, 0.86);
-  backdrop-filter: blur(10px);
-}
-
-@media (prefers-color-scheme: light) {
-  .mobileMenu {
-    background: rgba(245, 247, 251, 0.92);
-  }
-}
-
-.mobileMenu__inner {
-  padding: 14px 0 18px;
-  display: grid;
-  gap: 8px;
-}
-
-.mobileMenu__link {
-  text-decoration: none;
-  padding: 12px 14px;
-  border-radius: 14px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
-}
-
-.mobileMenu__cta {
-  margin-top: 6px;
-}
-
-@media (max-width: 919px) {
-  .nav {
-    display: none;
-  }
 }
 
 .hero {
