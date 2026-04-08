@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Медицинский центр DIAMED — консультации, диагностика и лечение. Запись онлайн, удобное время, забота о пациенте."
+    />
+    <meta name="theme-color" content="#0b6bff" />
+    <title>DIAMED — медицинский центр</title>
+  </head>
+  <body>
+    <a class="skipLink" href="#content">Перейти к содержимому</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="logo" href="#top" data-scroll aria-label="DIAMED">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text">DIAMED</span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <a class="nav__link" href="#services" data-scroll>Услуги</a>
+          <a class="nav__link" href="#doctors" data-scroll>Специалисты</a>
+          <a class="nav__link" href="#contacts" data-scroll>Контакты</a>
+        </nav>
+
+        <div class="headerAddress" aria-label="Адрес клиники">
+          <span class="headerAddress__icon" aria-hidden="true"></span>
+          <span data-bind="addressText">пгт Кромы, ул. 25 Октября, д. 52, литер А</span>
+        </div>
+
+        <div class="header__actions">
+          <a class="phoneLink" data-bind="phoneLink" href="tel:+70000000000">
+            <span class="phoneLink__label">Запись:</span>
+            <span data-bind="phoneText">+7 (960) 648-36-22</span>
+          </a>
+
+          <a class="btn btn--primary" data-bind="phoneLink" href="tel:+79606483622">Позвонить</a>
+
+          <button
+            class="burger"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span class="burger__line" aria-hidden="true"></span>
+            <span class="burger__line" aria-hidden="true"></span>
+            <span class="burger__line" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobileMenu" data-mobile-menu hidden>
+        <div class="container mobileMenu__inner">
+          <a class="mobileMenu__link" href="#services" data-scroll>Услуги</a>
+          <a class="mobileMenu__link" href="#doctors" data-scroll>Специалисты</a>
+          <a class="mobileMenu__link" href="#contacts" data-scroll>Контакты и режим работы</a>
+          <a class="btn btn--primary mobileMenu__cta" href="#contacts" data-scroll>Связаться</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Медицинский центр DIAMED</p>
+            <h1 class="hero__title">Диагностика и лечение без лишнего ожидания</h1>
+            <p class="hero__lead">
+              Помогаем разобраться с симптомами, пройти обследования и получить план лечения. Запишем на удобное время и
+              напомним о визите.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary btn--lg" href="#contacts" data-scroll>Режим работы</a>
+              <a class="btn btn--ghost btn--lg" href="#services">Посмотреть услуги</a>
+            </div>
+
+            <ul class="heroBadges" aria-label="Преимущества">
+              <li class="heroBadges__item">
+                <span class="heroBadges__icon" aria-hidden="true">✓</span>
+                <span>Врачи с опытом</span>
+              </li>
+              <li class="heroBadges__item">
+                <span class="heroBadges__icon" aria-hidden="true">✓</span>
+                <span>Современная диагностика</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2">Услуги</h2>
+            <p class="muted">Основные направления медицинского центра «Диамед».</p>
+          </div>
+
+          <div class="serviceBlocks">
+            <article class="card serviceBlock">
+              <div class="serviceBlock__head">
+                <h3 class="h3">Наркология</h3>
+                <p class="muted">Приёмы, осмотры, купирование состояния, кодирование и справки.</p>
+              </div>
+
+              <ul class="serviceList" aria-label="Перечень услуг наркологии">
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.001</span>
+                  <span class="serviceList__name">Первичный приём врача психиатра‑нарколога</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.002</span>
+                  <span class="serviceList__name">Купирование запойных состояний (неосложнённых)</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.002</span>
+                  <span class="serviceList__name">Купирование запойных состояний (осложнённых)</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.002</span>
+                  <span class="serviceList__name">Кодирование: медикаментозное</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">А09.05.023</span>
+                  <span class="serviceList__name">Экспресс‑тест на глюкозу</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.001</span>
+                  <span class="serviceList__name">Осмотр врача психиатра‑нарколога</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.001</span>
+                  <span class="serviceList__name">
+                    Осмотр врача психиатра‑нарколога (с выдачей справки и проведением анализа на ПАВ)
+                  </span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">В04.036.001</span>
+                  <span class="serviceList__name">Пред‑ и послерейсовый осмотр водителей (за единицу осмотра)</span>
+                </li>
+              </ul>
+
+            </article>
+
+            <article class="card serviceBlock">
+              <div class="serviceBlock__head">
+                <h3 class="h3">Процедуры (в кабинете)</h3>
+                <p class="muted">Инъекции, инфузии, капельницы и забор крови для анализов.</p>
+              </div>
+
+              <ul class="serviceList" aria-label="Перечень медицинских манипуляций">
+                <li class="serviceList__item">
+                  <span class="serviceList__code">А11.12.003</span>
+                  <span class="serviceList__name">В/в инфузия</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">А11.02.002, А11.01.003</span>
+                  <span class="serviceList__name">В/м, п/к инъекция</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">А11.12.003.001</span>
+                  <span class="serviceList__name">В/в капельное введение</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">А11.12.009</span>
+                  <span class="serviceList__name">Забор крови для анализов</span>
+                </li>
+                <li class="serviceList__item">
+                  <span class="serviceList__code">—</span>
+                  <span class="serviceList__name">Возможен забор крови на дому (по предварительному согласованию)</span>
+                </li>
+              </ul>
+
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="doctors">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2">Специалисты</h2>
+            <p class="muted">Информация о специалистах медицинского центра «Диамед».</p>
+          </div>
+
+          <div class="people">
+            <article class="person">
+              <div class="person__avatar" aria-hidden="true"></div>
+              <div class="person__body">
+                <p class="person__name">Шевляков Александр Георгиевич</p>
+                <p class="muted">Врач психиатр‑нарколог</p>
+              </div>
+            </article>
+
+            <article class="person">
+              <div class="person__avatar" aria-hidden="true"></div>
+              <div class="person__body">
+                <p class="person__name">Ершова Ирина Викторовна</p>
+                <p class="muted">Медицинская сестра</p>
+              </div>
+            </article>
+
+            <article class="person">
+              <div class="person__avatar" aria-hidden="true"></div>
+              <div class="person__body">
+                <p class="person__name">Каплина Валерия Алексеевна</p>
+                <p class="muted">Медицинская сестра</p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contacts">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2">Контакты и режим работы</h2>
+            <p class="muted">Запишем на удобное время. Если потребуется — подскажем, как подготовиться.</p>
+          </div>
+
+          <div class="contactGrid">
+            <div class="contactCard">
+              <div class="contactCard__row">
+                <p class="contactCard__label">Телефон</p>
+                <a class="link" data-bind="phoneLink3" href="tel:+79606483622">
+                  <span data-bind="phoneText3">+7 (960) 648-36-22</span>
+                </a>
+              </div>
+              <div class="contactCard__row">
+                <p class="contactCard__label">Электронная почта</p>
+                <a class="link contactCard__value" data-bind="emailLink" href="mailto:diamed57@mail.ru">
+                  <span data-bind="emailText">diamed57@mail.ru</span>
+                </a>
+              </div>
+              <div class="contactCard__row">
+                <p class="contactCard__label">Адрес</p>
+                <p class="contactCard__value" data-bind="addressText2">пгт Кромы, ул. 25 Октября, д. 52, литер А</p>
+              </div>
+              <div class="contactCard__row">
+                <p class="contactCard__label">Часы работы</p>
+                <div class="hours">
+                  <div class="hours__row">
+                    <span class="hours__day">Понедельник</span>
+                    <span class="hours__time">09:00–16:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Вторник</span>
+                    <span class="hours__time">09:00–16:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Среда</span>
+                    <span class="hours__time">09:00–16:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Четверг</span>
+                    <span class="hours__time">09:00–16:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Пятница</span>
+                    <span class="hours__time">09:00–16:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Суббота</span>
+                    <span class="hours__time">09:00–14:00</span>
+                  </div>
+                  <div class="hours__row">
+                    <span class="hours__day">Воскресенье</span>
+                    <span class="hours__time">Выходной</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mapCard" aria-label="Схема проезда">
+              <iframe
+                class="mapCard__iframe"
+                title="Яндекс Карты — DIAMED"
+                src="https://yandex.ru/map-widget/v1/?ll=35.770214%2C52.690362&z=16&pt=35.770214%2C52.690362%2Cpm2rdm&l=map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+
+              <div class="mapCard__overlay">
+                <p class="mapCard__title">Схема проезда</p>
+                <a class="link" data-bind="mapLink" href="https://yandex.com/maps/-/CPft64n1" target="_blank" rel="noreferrer">
+                  Открыть в Яндекс Картах
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="license">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2">Лицензия</h2>
+            <p class="muted">Данные лицензии и реквизиты организации.</p>
+          </div>
+
+          <div class="requisites" aria-label="Лицензия">
+            <h3 class="h3">Лицензия</h3>
+            <dl class="kv">
+              <div class="kv__row">
+                <dt class="kv__k">Номер</dt>
+                <dd class="kv__v">Л041-01142-57</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">Идентификатор документа</dt>
+                <dd class="kv__v">00367060</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">Скан</dt>
+                <dd class="kv__v">
+                  <a class="link" href="/license.pdf" target="_blank" rel="noreferrer">Открыть PDF</a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="requisites" aria-label="Реквизиты">
+            <h3 class="h3">Реквизиты</h3>
+            <dl class="kv">
+              <div class="kv__row">
+                <dt class="kv__k">Полное наименование</dt>
+                <dd class="kv__v">Общество с ограниченной ответственностью "Диамед"</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">Сокращенное наименование</dt>
+                <dd class="kv__v">ООО "Диамед"</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">ИНН</dt>
+                <dd class="kv__v">5714006310</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">КПП</dt>
+                <dd class="kv__v">571401001</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">ОГРН</dt>
+                <dd class="kv__v">1155749010801</dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">Юридический адрес</dt>
+                <dd class="kv__v">
+                  303200, Орловская обл, р-н Кромской, пгт Кромы, ул 25 Октября, д. 52, литер А
+                </dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__k">Директор</dt>
+                <dd class="kv__v">Шевляков Александр Георгиевич</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted tiny">
+          © <span data-bind="year"></span> DIAMED.
+          <a class="muted tiny" data-bind="phoneLink" href="tel:+79606483622"><span data-bind="phoneText">+7 (960) 648-36-22</span></a>
+          · <a class="muted tiny" data-bind="emailLink" href="mailto:diamed57@mail.ru"><span data-bind="emailText">diamed57@mail.ru</span></a>
+          · <a class="muted tiny" href="/policy.html" target="_blank" rel="noreferrer">Политика конфиденциальности</a>
+          · <a class="muted tiny" href="/pdn.html" target="_blank" rel="noreferrer">Обработка персональных данных</a>
+        </p>
+        <a class="muted tiny" href="#top" data-scroll>Наверх</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

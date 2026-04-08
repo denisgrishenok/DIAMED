@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b6bff" />
+    <title>Политика конфиденциальности — DIAMED</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --surface: rgba(255, 255, 255, 0.08);
+        --surface2: rgba(255, 255, 255, 0.12);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.72);
+        --border: rgba(255, 255, 255, 0.14);
+        --brand: #0b6bff;
+        --brand2: #13c6ff;
+        font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      a {
+        color: inherit;
+      }
+      .container {
+        width: min(980px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, rgba(11, 18, 32, 0.88), rgba(11, 18, 32, 0.55));
+        border-bottom: 1px solid var(--border);
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 0;
+      }
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+      }
+      .logo__mark {
+        width: 28px;
+        height: 28px;
+        border-radius: 10px;
+        background: radial-gradient(circle at 30% 30%, var(--brand2), var(--brand));
+        position: relative;
+        box-shadow: 0 10px 22px rgba(11, 107, 255, 0.28);
+      }
+      .logo__mark::before,
+      .logo__mark::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 2px;
+      }
+      .logo__mark::before {
+        width: 12px;
+        height: 3px;
+      }
+      .logo__mark::after {
+        width: 3px;
+        height: 12px;
+      }
+      .btn {
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--text);
+        border-radius: 14px;
+        padding: 10px 14px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section {
+        padding: 34px 0;
+      }
+      .card {
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        background: var(--surface2);
+        padding: 18px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+        letter-spacing: -0.3px;
+      }
+      h2 {
+        margin: 16px 0 8px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+      }
+      p {
+        margin: 0 0 10px;
+        color: var(--muted);
+      }
+      ul {
+        margin: 0 0 10px;
+        padding-left: 18px;
+        color: var(--muted);
+        display: grid;
+        gap: 6px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .meta {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="/" aria-label="DIAMED">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span>DIAMED</span>
+        </a>
+        <div style="flex: 1 1 auto"></div>
+        <a class="btn" href="/">На главную</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Политика конфиденциальности</h1>
+          <p class="meta">Версия от 08.04.2026</p>
+
+          <div class="card">
+            <p>
+              Настоящая политика описывает, какие данные мы можем получать при использовании сайта медицинского центра
+              «Диамед», и как мы их обрабатываем и защищаем.
+            </p>
+
+            <h2>1. Оператор</h2>
+            <ul>
+              <li>ООО "Диамед"</li>
+              <li>ИНН 5714006310, КПП 571401001, ОГРН 1155749010801</li>
+              <li>Юридический адрес: 303200, Орловская обл, р-н Кромской, пгт Кромы, ул 25 Октября, д. 52, литер А</li>
+              <li>Контакты: <a href="mailto:diamed57@mail.ru">diamed57@mail.ru</a>, <a href="tel:+79606483622">+7 (960) 648-36-22</a></li>
+            </ul>
+
+            <h2>2. Какие данные мы можем обрабатывать</h2>
+            <ul>
+              <li>Контактные данные: имя, телефон, адрес электронной почты (если вы их сообщаете).</li>
+              <li>Сведения из обращения: содержание сообщения, выбранная услуга/тема обращения.</li>
+              <li>Технические данные: IP-адрес, сведения о браузере и устройстве, файлы cookie (при наличии).</li>
+            </ul>
+
+            <h2>3. Цели обработки</h2>
+            <ul>
+              <li>Обработка обращений и обратная связь.</li>
+              <li>Запись на приём и информирование по вашему запросу.</li>
+              <li>Улучшение работы сайта и обеспечение его безопасности.</li>
+            </ul>
+
+            <h2>4. Правовые основания</h2>
+            <p>
+              Обработка осуществляется на основании согласия субъекта персональных данных и/или иных оснований,
+              предусмотренных законодательством РФ, включая Федеральный закон №152‑ФЗ «О персональных данных».
+            </p>
+
+            <h2>5. Передача третьим лицам</h2>
+            <p>
+              Мы можем передавать данные только в случаях, предусмотренных законом, либо исполнителям (например, хостинг),
+              которые обеспечивают работу сайта и действуют по нашему поручению и с соблюдением конфиденциальности.
+            </p>
+
+            <h2>6. Сроки хранения</h2>
+            <p>Данные хранятся не дольше, чем требуется для целей обработки, либо в сроки, установленные законодательством.</p>
+
+            <h2>7. Права пользователя</h2>
+            <ul>
+              <li>Запросить сведения об обработке ваших данных.</li>
+              <li>Потребовать уточнения, блокирования или удаления данных (при наличии оснований).</li>
+              <li>Отозвать согласие на обработку данных.</li>
+            </ul>
+            <p>Для обращений используйте email: <a href="mailto:diamed57@mail.ru">diamed57@mail.ru</a>.</p>
+
+            <h2>8. Безопасность</h2>
+            <p>Мы принимаем организационные и технические меры защиты данных, включая ограничение доступа и контроль сохранности.</p>
+
+            <h2>9. Изменения политики</h2>
+            <p>Мы можем обновлять политику. Актуальная версия публикуется на этой странице.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
