@@ -979,6 +979,18 @@ textarea.field__input {
   }
 }
 
+.docLinks {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.docLinks__item {
+  line-height: 1.35;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 18px 0;
