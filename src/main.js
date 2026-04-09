@@ -6,6 +6,10 @@ const CENTER = {
   emailText: 'diamed57@mail.ru',
   emailMailto: 'mailto:diamed57@mail.ru',
   addressText: 'Кромы, ул. 25 Октября, д. 52 А',
+  addressHeaderLine1: '303200, Орловская обл., Кромы',
+  addressHeaderLine2: 'ул. 25 Октября, д. 52 А',
+  addressHeaderWideLine1: '303200, Орловская обл.',
+  addressHeaderWideLine2: 'Кромы, ул. 25 Октября, д. 52 А',
   mapUrl: 'https://yandex.com/maps/-/CPft64n1',
 }
 
@@ -34,6 +38,10 @@ function setupBinds() {
   bindText('phoneText3', CENTER.phoneText)
   bindText('addressText', CENTER.addressText)
   bindText('addressText2', CENTER.addressText)
+  bindText('addressHeaderLine1', CENTER.addressHeaderLine1)
+  bindText('addressHeaderLine2', CENTER.addressHeaderLine2)
+  bindText('addressHeaderWideLine1', CENTER.addressHeaderWideLine1)
+  bindText('addressHeaderWideLine2', CENTER.addressHeaderWideLine2)
 
   bindLink('phoneLink', `tel:${CENTER.phoneTel}`)
   bindLink('phoneLink3', `tel:${CENTER.phoneTel}`)

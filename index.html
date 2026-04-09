@@ -29,7 +29,14 @@
 
         <div class="headerContactRow" aria-label="Адрес и телефон">
           <div class="headerAddress" aria-label="Адрес клиники">
-            <span>303200, Орловская область, </span><span data-bind="addressText">Кромы, ул. 25 Октября, д. 52 А</span>
+            <span class="headerAddress__set headerAddress__set--sm">
+              <span class="headerAddress__line" data-bind="addressHeaderLine1">303200, Орловская обл., Кромы</span>
+              <span class="headerAddress__line" data-bind="addressHeaderLine2">ул. 25 Октября, д. 52 А</span>
+            </span>
+            <span class="headerAddress__set headerAddress__set--lg">
+              <span class="headerAddress__line" data-bind="addressHeaderWideLine1">303200, Орловская обл.</span>
+              <span class="headerAddress__line" data-bind="addressHeaderWideLine2">Кромы, ул. 25 Октября, д. 52 А</span>
+            </span>
           </div>
 
           <a class="phoneLink" data-bind="phoneLink" href="tel:+70000000000">
@@ -231,7 +238,9 @@
               </div>
               <div class="contactCard__row">
                 <p class="contactCard__label">Адрес</p>
-                <p class="contactCard__value" data-bind="addressText2">Кромы, ул. 25 Октября, д. 52 А</p>
+                <p class="contactCard__value">
+                  <span>303200, Орловская обл, </span><span data-bind="addressText2">Кромы, ул. 25 Октября, д. 52 А</span>
+                </p>
               </div>
               <div class="contactCard__row">
                 <p class="contactCard__label">Часы работы</p>

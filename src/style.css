@@ -170,7 +170,9 @@ a {
 .headerAddress {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -180,9 +182,25 @@ a {
   line-height: 1.2;
   min-width: 0;
   max-width: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.headerAddress__line {
+  display: block;
+}
+
+.headerAddress__set--lg {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .headerAddress__set--sm {
+    display: none;
+  }
+
+  .headerAddress__set--lg {
+    display: inline;
+  }
 }
 
 .header__actions {
