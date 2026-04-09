@@ -1009,6 +1009,30 @@ textarea.field__input {
   line-height: 1.35;
 }
 
+.orgList {
+  display: grid;
+  gap: 12px;
+}
+
+.orgCard {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.orgCard__title {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+.orgCard p {
+  margin: 0;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 18px 0;
